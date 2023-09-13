@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}主页{% endblock %}
+{% block body %}
+
+    <div class="welcome" style="text-align: center;">
+        {% if not user %}
+            <h1>傻逼，你还没登陆哦！</h1>
+            <p><a></a></p>
+        {% else %}
+            <h1>欢迎你！ {{ user.username }}!</h1>
+            <p><a></a></p>
+            </div>
+            {#    <div class="welcome" style="text-align: center;">#}
+            <form class="registration-form" method="post">
+            <div class="inputField">
+                <label for="username">请输入:</label>
+                <input type="text" id="url" name="url" placeholder="输入你最帅的名字">
+            </div>
+            <div class="inputField">
+                <input type="submit" value="查询">
+            </div>
+            </form>
+            {#    </div>#}
+        {% endif %}
+{% endblock %}
+
