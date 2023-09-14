@@ -6,7 +6,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	background: black;
-	background: linear-gradient(to bottom, #000000 0%, #5788fe 100%);
+	background: linear-gradient(to bottom, #000000 0%, #212123 70%);
 	font-family:'Questrial','Noto Serif SC' ;
 }
 
@@ -16,7 +16,7 @@ html, body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #fe5757;
+	background: #5c0303;
 	animation: colorChange 30s ease-in-out infinite;
 	animation-fill-mode: both;
 	mix-blend-mode: overlay;
@@ -106,11 +106,13 @@ nav {
     text-shadow: none;
 	-webkit-font-smoothing: antialiased;
 	text-decoration: none;
+	font-family: "Arial", sans-serif; /* 设置字体，使用备用字体以增强兼容性 */
+	/*font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;*/
 }
 .navigation__item a:hover {
-    color: #FFF;
-    background: #FF7F00;
-    border-color: #FF7F00;
+    color: #ec3c3c;
+    background: #310344;
+    border-color: #fd0631;
     opacity: 1;
     transition: all .3s;
 }
@@ -129,4 +131,24 @@ ol, ul {
 .icpnum{
 	color: #fff;
 	text-decoration: none;
+}
+
+/* 流星样式 */
+.shooting-star {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    animation: shootingStar 5s linear infinite;
+}
+
+/* 背景样式 */
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, #000000 0%, #212123 100%);
 }
