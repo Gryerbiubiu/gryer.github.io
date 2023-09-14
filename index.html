@@ -1,26 +1,41 @@
-{% extends "base.html" %}
-{% block title %}主页{% endblock %}
-{% block body %}
+<!DOCTYPE html>
+<html>
 
-    <div class="welcome" style="text-align: center;">
-        {% if not user %}
-            <h1>傻逼，你还没登陆哦！</h1>
-            <p><a></a></p>
-        {% else %}
-            <h1>欢迎你！ {{ user.username }}!</h1>
-            <p><a></a></p>
-            </div>
-            {#    <div class="welcome" style="text-align: center;">#}
-            <form class="registration-form" method="post">
-            <div class="inputField">
-                <label for="username">请输入:</label>
-                <input type="text" id="url" name="url" placeholder="输入你最帅的名字">
-            </div>
-            <div class="inputField">
-                <input type="submit" value="查询">
-            </div>
-            </form>
-            {#    </div>#}
-        {% endif %}
-{% endblock %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=11" id="mixia_vpid">
+    <title>引导页 - xxxx</title>
+    <meta name="keywords" content="Veen Zhao">
+    <meta name="description" content="Veen Zhao">
+    <link rel="icon" href="https://i.loli.net/2020/01/29/PNjchB4HDAKOWkg.png">
+    <link rel="shortcut icon" href="https://i.loli.net/2020/01/29/PNjchB4HDAKOWkg.png">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="style/css" rel="stylesheet">
+</head>
 
+<body>
+    <div class="content">
+        <div class="title">xxxx</div>
+        <hr class="hr">
+        <div class="discription">最美的年华，终究成为了过往。</div>
+        <hr class="hr">
+        <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+                <li class="navigation__item"><a href="index.html" target="_blank" title="我的博客">日记</a></li>
+                <li class="navigation__item"><a href="index.html" target="_blank" title="我的作品">作品</a></li>
+                <li class="navigation__item"><a href="index.html" target="_blank" title="我的博客">音乐</a></li>
+                <li class="navigation__item"><a href="index.html" target="_blank" title="我的博客">计事</a></li>
+                <li class="navigation__item"><a href="index.html" target="_blank" title="我的博客">工作</a></li>
+            </ul>
+        </nav>
+        <div class="icp"><a href="http://www.beian.miit.gov.cn/" class="icpnum" target="_blank" rel="nofollow">蜀xxxxx号-1</a></div>
+    </div>
+
+    <div class="landscape"></div>
+    <div class="filter"></div>
+    <canvas id="canvas" width="1366" height="638"></canvas>
+    <script type="text/javascript" src="style/sky.js"></script>
+</body>
+
+</html>
